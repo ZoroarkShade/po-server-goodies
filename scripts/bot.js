@@ -17,9 +17,9 @@ Bot.prototype.sendAll = function (message, channel) {
 };
 Bot.prototype.sendMessage = function (tar, message, channel) {
     if (channel === undefined) {
-        sys.sendMessage(tar, this.formatMsg(message));
+        sys.sendHtmlMessage(tar, this.formatMsg(message));
     } else {
-        sys.sendMessage(tar, this.formatMsg(message), channel);
+        sys.sendHtmlMessage(tar, this.formatMsg(message), channel);
     }
 };
 Bot.prototype.sendHtmlAll = function (message, channel) {
